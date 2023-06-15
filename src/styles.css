@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+.gridBanco{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "main main main"
+    ;
+}
+.main{
+    grid-area: main;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+.textNormal{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+}
+.nav ul{
+    gap: 70px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.mainButton{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    background-color: rgb(3, 3, 141);
+    color: rgb(255, 255, 255);
+}
+.imgblock{
+    text-align: center;
+}

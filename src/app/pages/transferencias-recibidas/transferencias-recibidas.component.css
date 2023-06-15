@@ -1,0 +1,12 @@
+.tabla{
+    display: flex;
+    gap: 50px;
+}
+.tabla > div{
+    width: 30%;
+}
+.indice{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,1 +1,25 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&family=Quicksand:wght@400;500;600&family=Raleway&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
+</head>
+<body>
+    <div class="gridBanco"></div>
+    <main class="main">
+        <input [(ngModel)]="user" class="textNormal" type="text" placeholder="Usuario/DNI">
+        <br>
+        <input [(ngModel)]="password" class="textNormal" type="password" placeholder="Contraseña">
+        <br>
+        <button (click)="validarLogin()" class="mainButton">Entrar</button>
+    </main>
+</body>
+</html>

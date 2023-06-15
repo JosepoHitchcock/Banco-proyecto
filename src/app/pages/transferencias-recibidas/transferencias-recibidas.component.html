@@ -1,0 +1,11 @@
+<h1>Transerencias Recibidas</h1>
+<div class="tabla indice">
+    <div>Concepto</div>
+    <div>Importe</div>
+    <div>Fecha</div>
+</div>
+<article class="tabla" *ngFor="let transferencias of transferencias">
+    <div>{{transferencias.concepto}}</div>
+    <div>{{transferencias.importe}}€</div>
+    <div>{{transferencias.fecha | date}}</div>
+</article>
