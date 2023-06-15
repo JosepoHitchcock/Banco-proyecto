@@ -9,6 +9,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "main main main"
+    "footer footer footer"
     ;
 }
 .main{
@@ -37,4 +38,12 @@
 }
 .imgblock{
     text-align: center;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    position: absolute ;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
