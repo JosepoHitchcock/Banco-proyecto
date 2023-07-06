@@ -4,10 +4,11 @@
   <img src="assets/imagenes/Logo-BBVA.webp" alt="codicia" width="200">
     </article>
   <ul>
-      <li><a routerLink="/auth/login">Log in</a></li>
-      <li><a routerLink="/pages/dashboard">Inicio</a></li>
-      <li><a routerLink="/pages/transferencias-recibidas">Transferencias Recibidas</a></li>
-      <li><a routerLink="/pages/transferencias-enviadas">Transferencias Enviadas</a></li>
+      <li class="txtHeader"><a class="linkHeader" routerLink="/auth/login">Log in</a></li>
+      <li class="txtHeader"><a class="linkHeader" routerLink="/pages/dashboard">Inicio</a></li>
+      <li class="txtHeader"><a class="linkHeader" routerLink="/pages/transferencias-recibidas">Transferencias Recibidas</a></li>
+      <li class="txtHeader"><a class="linkHeader" routerLink="/pages/transferencias-enviadas">Transferencias Enviadas</a></li>
+      <li><button class="sesionButton" (click)="cerrarSesion()">Cerrar Sesion</button></li>
   </ul>
 </nav>
 <router-outlet></router-outlet>

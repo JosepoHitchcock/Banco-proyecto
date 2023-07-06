@@ -30,14 +30,35 @@
     justify-content: center;
 }
 .mainButton{
+    cursor: pointer;
     width: 200px;
     height: 40px;
     margin: 20px;
     background-color: rgb(3, 3, 141);
     color: rgb(255, 255, 255);
 }
+.sesionButton{
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(3, 3, 141);
+    color: rgb(255, 255, 255);
+}
+.sesionButton:hover{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(141, 3, 3);
+    color: rgb(255, 255, 255);
+}
 .imgblock{
     text-align: center;
+}
+.txtHeader{
+    display: flex;
+    align-items: center;
+}
+.linkHeader:focus{
+    border: 2px rgb(3, 3, 141) solid;
 }
 .footer{
     grid-area: footer;

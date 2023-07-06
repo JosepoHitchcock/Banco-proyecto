@@ -1,13 +1,14 @@
 <body>
     <div class="gridBanco"></div>
     <main class="main">
-        <input class="textNormal" type="text" placeholder="Destinatario">
+        <input [(ngModel)]="nuevaTransferencia.destino.id" class="textNormal" type="text" placeholder="Destinatario">
         <br>
-        <input class="textNormal" type="number" placeholder="Importe">
+        <input [(ngModel)]="nuevaTransferencia.importe" class="textNormal" type="number" placeholder="Importe">
         <br>
-        <input class="textNormal" type="text" placeholder="Concepto">
+        <input [(ngModel)]="nuevaTransferencia.concepto" class="textNormal" type="text" placeholder="Concepto">
         <br>
-        <button  class="mainButton">Enviar</button>
+        <button  class="mainButton" (click)="enviarTransferencia()">Enviar</button>
+        <p>{{feedback}}</p>
     </main>
     <footer class="footer">
         <button class="mainButton" routerLink="/pages/dashboard">Volver</button>

@@ -2,11 +2,13 @@
 <div class="tabla indice">
     <div>Concepto</div>
     <div>Importe</div>
+    <div>Destinatario</div>
     <div>Fecha</div>
 </div>
-<article class="tabla" *ngFor="let transferencias of transferencias">
+<article [routerLink]="'/pages/detalle-transferencia/'+transferencias.id" class="tabla" *ngFor="let transferencias of transferencias">
     <div>{{transferencias.concepto}}</div>
     <div>{{transferencias.importe}}€</div>
+    <div>{{transferencias.destino.usuario}}</div>
     <div>{{transferencias.fecha | date}}</div>
 </article>
 <footer class="footer">

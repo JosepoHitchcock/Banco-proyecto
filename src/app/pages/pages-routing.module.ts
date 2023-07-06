@@ -6,13 +6,16 @@ import { transferenciasEnviadas } from '../datos/transferencias.enviadas.ejemplo
 import { TransferenciasEnviadasComponent } from './transferencias-enviadas/transferencias-enviadas.component';
 import { NuevaTransferenciaComponent } from './nueva-transferencia/nueva-transferencia.component';
 import { MiCuentaComponent } from './mi-cuenta/mi-cuenta.component';
+import { guardGuard } from '../guards/guard.guard';
+import { DetalleTransferenciaComponent } from './detalle-transferencia/detalle-transferencia.component';
 
 const routes: Routes = [
-  {path:'dashboard', component:DashboardComponent},
-  {path: 'transferencias-recibidas', component:TransferenciasRecibidasComponent},
-  {path: 'transferencias-enviadas', component:TransferenciasEnviadasComponent},
-  {path: 'nueva-transferencia', component:NuevaTransferenciaComponent},
-  {path: 'mi-cuenta', component:MiCuentaComponent},
+  {path:'dashboard', component:DashboardComponent,canActivate:[guardGuard]},
+  {path: 'transferencias-recibidas', component:TransferenciasRecibidasComponent,canActivate:[guardGuard]},
+  {path: 'transferencias-enviadas', component:TransferenciasEnviadasComponent,canActivate:[guardGuard]},
+  {path: 'nueva-transferencia', component:NuevaTransferenciaComponent, canActivate:[guardGuard]},
+  {path: 'mi-cuenta', component:MiCuentaComponent,canActivate:[guardGuard]},
+  {path: 'detalle-transferencia/:id', component:DetalleTransferenciaComponent,canActivate:[guardGuard]},
 ];
 
 @NgModule({

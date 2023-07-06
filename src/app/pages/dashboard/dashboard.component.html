@@ -3,6 +3,7 @@
     <div class="gridBanco"></div>
     
     <main class="main">
+        <p *ngIf="cliente">Usuario:{{cliente.correo}}</p>
         <button class="mainButton" routerLink="/pages/nueva-transferencia">Nueva transferencia</button>
         <br>
         <button class="mainButton" routerLink="/pages/mi-cuenta">Mi cuenta</button>

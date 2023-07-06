@@ -1,9 +1,9 @@
 <body class="gridCuenta">
     <main class="mainIzq">
         <ul>
-            <li>Nombre de Usuario: Miguelito</li>
-            <li>Saldo: xxxxx.xx €</li>
-            <li>Tipo de Usuario: Clinte</li>
+            <li *ngIf="cliente">Nombre de Usuario: {{cliente.usuario}}</li>
+            <li *ngIf="cliente">Saldo: {{cliente.saldo}}€</li>
+            <li *ngIf="cliente">Gestor: {{cliente.gestor.usuario}}</li>
         </ul>
     </main>
     <aside class="asideDer">
